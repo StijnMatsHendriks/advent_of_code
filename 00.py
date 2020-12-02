@@ -5,16 +5,16 @@ def not_so_smart_calculator(input_file, amount_of_entries):
         data = [line for line in f for number in line.split()]
         data = [int(number.strip("\n")) for number in data]
 
-        for comb in combinations(data,amount_of_entries):
-            sum = 0
-            mult = comb[0]
+        for comb in combinations(data, amount_of_entries):
+            sumz = 0
+            multz = comb[0]
             for index in range(amount_of_entries):
-                sum += comb[index]
+                sumz += comb[index]
                 if index != 0:
-                    mult *= comb[index]
+                    multz *= comb[index]
 
-                if sum == 2020:
-                    return sum, mult
+                if sumz == 2020:
+                    return sumz, multz
 
 
 if __name__ == "__main__":
