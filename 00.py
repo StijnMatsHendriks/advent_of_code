@@ -18,5 +18,5 @@ def not_so_smart_calculator(input_file, amount_of_entries):
 
 
 if __name__ == "__main__":
-    answer = not_so_smart_calculator("00.txt", 3)
-    print(answer)
+    sum, mult = not_so_smart_calculator("00.txt", 3)
+    print(sum, mult)
