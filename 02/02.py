@@ -28,5 +28,5 @@ def count_trees_wrapper(input_file, increments):
     return np.prod(trees_per_route)
 
 if __name__ == "__main__":
-    trees = count_trees_wrapper("02.txt", [(1,1), (3,1), (5,1), (7,1), (1,2)])
+    trees = count_trees_wrapper("02.txt", [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)])
     print(trees)
